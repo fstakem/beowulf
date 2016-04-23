@@ -1,0 +1,231 @@
+<div id="container">
+  <img id="transparent-img" src="<%= image_url("placeholder.png") %>" usemap="#background-image-map">
+  <div id="background-img">
+    <h1><%= @observed_user.username %></h1>
+    
+    <div class="overlay keyboard">
+      <div class="keyboard-text"></div>
+      <div class="keyboard-completion-text">gg</div>
+    </div>
+  </div>
+
+  <map name="background-image-map">
+    <!-- Links -->
+    <area id="notebook-area"      
+          class="link-area" 
+          shape="poly"    
+          coords="81,379,413,371,408,833,56,831" 
+          href="<%= projects_path %>">
+    <area id="resume-area-left"   
+          class="link-area" 
+          shape="poly"    
+          coords="213,377,224,346,367,377" 
+          href="<%= url_for(:controller => "users", :action => "resume") %>">
+    <area id="resume-area-right"  
+          class="link-area" 
+          shape="poly"    
+          coords="423,392,521,417,419,836" 
+          href="<%= url_for(:controller => "users", :action => "resume") %>">
+    <area id="car-area"           
+          class="link-area" 
+          shape="poly"    
+          coords="681,201,779,193,780,230,683,237" 
+          href="<%= url_for(:controller => "users", :action => "about_me") %>">
+    <area id="todo-area"          
+          class="link-area" 
+          shape="poly"    
+          coords="711,536,639,450,808,321,969,530" 
+          href="<%= posts_path %>">
+    <area id="cable-area"         
+          class="link-area" 
+          shape="circle"  
+          coords="1020,308,120" 
+          href="<%= links_path %>">
+    <area id="cup-area"           
+          class="link-area" 
+          shape="circle"  
+          coords="1104,435,80" 
+          href="#">
+    <area id="phone-area"         
+          class="link-area" 
+          shape="poly"    
+          coords="1222,490,1299,426,1452,597,1364,668" 
+          href="#">
+    <area id="book-area"          
+          class="link-area" 
+          shape="poly"    
+          coords="1337,459,1466,458,1501,840,1237,840,1217,501,1364,668,1452,597" 
+          href="<%= skills_path %>">
+
+
+    <!-- Keys -->
+    <area id="q-key-area"          
+          class="input_area" 
+          shape="poly"    
+          coords="584,658,606,656,604,679,583,678">
+    <area id="w-key-area"          
+          class="input_area" 
+          shape="poly"    
+          coords="613,656,634,657,636,677,611,678">
+    <area id="e-key-area"          
+          class="input_area" 
+          shape="poly"    
+          coords="642,656,662,656,664,678,641,677">
+    <area id="r-key-area"          
+          class="input_area" 
+          shape="poly"    
+          coords="670,655,693,655,693,677,669,677">
+    <area id="t-key-area"          
+          class="input_area" 
+          shape="poly"    
+          coords="700,655,721,654,722,676,700,675">
+    <area id="y-key-area"          
+          class="input_area" 
+          shape="poly"    
+          coords="729,654,752,655,751,676,729,677">
+    <area id="u-key-area"          
+          class="input_area" 
+          shape="poly"    
+          coords="758,653,781,653,781,675,759,675">
+    <area id="i-key-area"          
+          class="input_area" 
+          shape="poly"    
+          coords="788,655,811,654,809,676,786,675">
+    <area id="o-key-area"          
+          class="input_area" 
+          shape="poly"    
+          coords="818,652,838,652,839,674,817,674">
+    <area id="p-key-area"          
+          class="input_area" 
+          shape="poly"    
+          coords="847,653,868,652,868,673,846,675">
+    <area id="a-key-area"          
+          class="input_area" 
+          shape="poly"    
+          coords="592,686,612,686,612,708,590,709">
+    <area id="s-key-area"          
+          class="input_area" 
+          shape="poly"    
+          coords="620,685,641,686,642,707,621,708">
+    <area id="d-key-area"          
+          class="input_area" 
+          shape="poly"    
+          coords="649,685,670,685,671,707,648,706">
+    <area id="f-key-area"          
+          class="input_area" 
+          shape="poly"    
+          coords="679,685,700,683,700,705,679,707">
+    <area id="g-key-area"          
+          class="input_area" 
+          shape="poly"    
+          coords="707,685,730,684,730,705,706,705">
+    <area id="h-key-area"          
+          class="input_area" 
+          shape="poly"    
+          coords="738,685,758,684,760,705,736,705">
+    <area id="j-key-area"          
+          class="input_area" 
+          shape="poly"    
+          coords="766,683,787,682,789,704,766,705">
+    <area id="k-key-area"          
+          class="input_area" 
+          shape="poly"    
+          coords="797,683,817,682,818,704,796,704">
+    <area id="l-key-area"          
+          class="input_area" 
+          shape="poly"    
+          coords="825,682,846,682,847,703,825,704">
+    <area id="z-key-area"          
+          class="input_area" 
+          shape="poly"    
+          coords="606,715,627,715,629,736,606,736">
+    <area id="x-key-area"          
+          class="input_area" 
+          shape="poly"    
+          coords="635,715,657,715,658,736,635,737">
+    <area id="c-key-area"          
+          class="input_area" 
+          shape="poly"    
+          coords="665,714,685,714,687,736,663,736">
+    <area id="v-key-area"          
+          class="input_area" 
+          shape="poly"    
+          coords="694,713,716,713,716,735,693,736">
+    <area id="b-key-area"          
+          class="input_area" 
+          shape="poly"    
+          coords="723,713,745,714,745,735,722,735">
+    <area id="n-key-area"          
+          class="input_area" 
+          shape="poly"    
+          coords="752,713,775,713,775,734,752,735">
+    <area id="m-key-area"          
+          class="input_area" 
+          shape="poly"    
+          coords="782,712,802,712,804,734,781,735">
+    <area id="space-key-area"          
+          class="input_area" 
+          shape="poly"    
+          coords="665,745,833,743,833,763,665,766">
+    <area id="return-key-area"          
+          class="input_area" 
+          shape="poly"    
+          coords="912,681,964,681,966,701,912,702">
+    <area id="0-key-area"          
+          class="input_area" 
+          shape="poly"    
+          coords="831,623,854,622,854,644,831,646">
+    <area id="1-key-area"          
+          class="input_area" 
+          shape="poly"    
+          coords="568,628,590,628,590,651,567,649">
+    <area id="2-key-area"          
+          class="input_area" 
+          shape="poly"    
+          coords="597,627,620,627,620,650,596,649">
+    <area id="3-key-area"          
+          class="input_area" 
+          shape="poly"    
+          coords="627,627,648,628,650,648,625,649">
+    <area id="4-key-area"          
+          class="input_area" 
+          shape="poly"    
+          coords="656,626,679,625,678,648,655,648">
+    <area id="5-key-area"          
+          class="input_area" 
+          shape="poly"    
+          coords="685,625,707,625,706,647,683,647">
+    <area id="6-key-area"          
+          class="input_area" 
+          shape="poly"    
+          coords="714,625,737,624,737,646,713,647">
+    <area id="7-key-area"          
+          class="input_area" 
+          shape="poly"    
+          coords="743,625,765,623,766,646,743,646">
+    <area id="8-key-area"          
+          class="input_area" 
+          shape="poly"    
+          coords="773,623,795,622,796,645,772,645">
+    <area id="9-key-area"          
+          class="input_area" 
+          shape="poly"    
+          coords="802,621,824,622,824,645,801,645">
+    <area id="esc-key-area"          
+          class="input_area" 
+          shape="poly"    
+          coords="537,601,560,601,559,619,537,619">
+    <area id="tab-key-area"          
+          class="input_area" 
+          shape="poly"    
+          coords="539,658,577,658,576,679,538,680">
+    <area id="xxxxxx-key-area"          
+          class="input_area" 
+          shape="poly"    
+          coords="">
+  </map>
+
+</div>
+
+
+

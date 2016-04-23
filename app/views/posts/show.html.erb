@@ -1,0 +1,5 @@
+<h1>Post: <%= @post.title %></h1>
+<p><%= @post.text %></p>
+<% @post.photos.each do |photo| %>
+  <img src=<%= photo.get_path %> height="60" width="60">
+<% end %>

@@ -1,0 +1,9 @@
+<h1>Links for <%= @observed_user.username%></h1>
+
+<ul>
+  <% @links.each do |link| %>
+    <li>
+      <a href="<%= link.url %>"><%= link.text %></a>
+    </li>
+  <% end %>
+</ul>

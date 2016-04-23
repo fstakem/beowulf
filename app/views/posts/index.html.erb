@@ -1,0 +1,15 @@
+<h1>Posts for <%= @observed_user.username%></h1>
+
+<ul>
+  <% @posts.each do |post| %>
+    <li>
+      <%= link_to post.title, post_path(id: post.id) %>
+    </li>
+    <p>
+      <%= post.text %>
+    </p>
+    <% post.photos.each do |photo| %>
+      <img src=<%= photo.get_path %> height="60" width="60">
+    <% end %>
+  <% end %>
+</ul>

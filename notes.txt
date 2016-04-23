@@ -1,0 +1,103 @@
+Rails Notes
+1.  Install rvm
+2.  Install ruby version
+3.  Create gemset in new ruby version
+4.  Install bundler, nokogiri, and rails
+5.  Create rails app
+6.  Create git repo and make fist commit
+7.  Add pg to gemfile
+8.  Add postgres user to config
+9.  Create db with postgres
+10. In postgres create new user
+11. In postgres give new user permission on app db
+12. Redo postgres config to use new user(not secure)
+13. Add devise to gemfile
+14. Setup devise
+15. Setup root url in config
+16. Create devise user
+17. Migrate user model
+18. Add bootstrap sass to gem file
+19. Make app css a sass file
+20. Import bootstrap and bootstrap sprockets into application sass file
+21. Require bootstrap sprockets in js file
+22. Add font awesome to gemfile
+23. Add font awesome to application sass
+24. Generate all resources for initial ER diagram
+25. Add columns to migrations
+26. Create model validations
+27. Create model relationships (1:1, 1:N)
+28. Create migration relationships
+29. Create foreign key contraints
+30. Create all join models
+31. Add model relationships (N:M)
+32. Add migration relationships (N:M)
+33. Configure user model and migration - nothing changes
+34. Create join table foreign key contraints
+35. Rollback whole DB and reload migrations - no changes
+36. For ER diagram install graphviz onto the OS
+37. Add rails-erd to gem file and update gems
+38. Create a script to output er diagram in lib/scripts
+39. Create intial seed data and load
+40. Sketch out pages
+41. Design urls -> see below
+42. Create user controller not overlapping devise routes
+43. Break seeds file into mutlitple file with ability to add test data
+43. Finish routing and setup all basic pages for viewing
+44. Add photos to app, DB, and UI
+45. Create basic page templates
+
+TODO
+44. Figure out best way to do public/private interface
+46. Setup main landing page
+47. Add redcarpet so that blog posts use markdown
+48. Figure out how to serve up images
+
+
+-- TODO long term
+1.  Remove password from db file
+2.  Condense commits into one commit
+3.  Get system running on external server
+4.  Add ability to have multiple emails
+5.  Add ability to have model either shown or not...possibly field
+6.  Add feature flags to DB
+7.  Add field to have a root user that maps to route 'me'
+8.  Add history gem to keep track of everything that changed -> paper_trail or audited
+9.  Add search capabilities
+10. Add analytics capabilities
+11. Add tagging
+12. Look into schemacrawler
+13. Redo seed data to be precise
+14. Figure out naming conventions...why are join tables both plural but in db but model?
+
+Issues
+
+Routes Design
+www.base.com/user_name                user_controller      
+www.base.com/user_name/about_me       user_controller
+www.base.com/user_name/resume         resume_controller
+www.base.com/user_name/projects       project_controller
+www.base.com/user_name/project/:id    project_controller
+www.base.com/user_name/skills         skill_controller
+www.base.com/user_name/posts          post_controller
+www.base.com/user_name/post/:id       post_controller
+www.base.com/user_name/links          link_controller
+
+
+Devise
+new_user_session_path         GET     /users/sign_in(.:format)          devise/sessions#new
+user_session_path             POST    /users/sign_in(.:format)          devise/sessions#create
+destroy_user_session_path     DELETE  /users/sign_out(.:format)         devise/sessions#destroy
+user_password_path            POST    /users/password(.:format)         devise/passwords#create
+new_user_password_path        GET     /users/password/new(.:format)     devise/passwords#new
+edit_user_password_path       GET     /users/password/edit(.:format)    devise/passwords#edit
+                              PATCH   /users/password(.:format)         devise/passwords#update
+                              PUT     /users/password(.:format)         devise/passwords#update
+cancel_user_registration_path GET     /users/cancel(.:format)           devise/registrations#cancel
+user_registration_path        POST    /users(.:format)                  devise/registrations#create
+new_user_registration_path    GET     /users/sign_up(.:format)          devise/registrations#new
+edit_user_registration_path   GET     /users/edit(.:format)             devise/registrations#edit
+                              PATCH   /users(.:format)                  devise/registrations#update
+                              PUT     /users(.:format)                  devise/registrations#update
+                              DELETE  /users(.:format)                  devise/registrations#destroy
+
+

@@ -1,0 +1,5 @@
+<h1>Project: <%= @project.name %></h1>
+<p><%= @project.long_description %></p>
+<% @project.photos.each do |photo| %>
+  <img src=<%= photo.get_path %> height="60" width="60">
+<% end %>

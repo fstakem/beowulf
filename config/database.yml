@@ -1,0 +1,26 @@
+
+default: &default
+  adapter: postgresql
+  pool: 5
+  timeout: 5000
+
+development:
+  <<: *default
+  database: beowulf_dev
+  username: beowulf
+  password: 4_beowulf_123
+  host: localhost
+
+test:
+  <<: *default
+  database: beowulf_test
+  username: beowulf
+  password: 4_beowulf_123
+  host: localhost
+
+production:
+  <<: *default
+  database: beowulf_prod
+  username: beowulf
+  password: 4_beowulf_123
+  host: localhost

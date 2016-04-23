@@ -1,0 +1,7 @@
+<h1>Skills for <%= @observed_user.username%></h1>
+
+<ul>
+  <% @skills.each do |skill| %>
+    <li><%= skill.name %></li>
+  <% end %>
+</ul>

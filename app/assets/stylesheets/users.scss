@@ -1,0 +1,71 @@
+// Place all the styles related to the user controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#desk-body {
+}
+
+#transparent-img {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  opacity: 0; 
+  width: 100%; 
+  height: 100%;
+  z-index: 10;
+}
+
+#background-img {
+  position: absolute; 
+  top: 0; 
+  left:0;
+  width: 100%;
+  height: 100%;
+  background-image: image-url("desk_1600.png");
+  z-index: 0;
+}
+
+.overlay {
+  position:fixed;
+  font-size: 35px;
+  visibility: hidden;
+  top: 25%;
+  left: 35%;
+  width: 30%;
+  height: 1.5em;
+  margin-top: 10px;
+  margin-left: 15px;
+  padding-left: 10px;
+  border-radius: 2px;
+  background: rgba(0,0,0,0.6);
+  box-shadow: 5px 5px 2px rgba(0,0,0,1);
+  color: #AAA798;
+}
+
+.keyboard-text {
+  display: inline;
+}
+
+.keyboard-completion-text {
+  display: inline;
+  margin-left: -10px;
+  color: rgba(255,255,255,.2)
+}
+
+
+.overlay.open {
+  visibility: visible;
+}
+
+
+.overlay keyboard-text {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s, visibility 0s 0.5s;
+}
+
+.overlay keyboard-text.open {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s;
+}
