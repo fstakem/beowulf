@@ -14,6 +14,7 @@ gem 'pg'
 gem 'devise'
 gem 'bootstrap-sass'
 gem 'font-awesome-rails'
+gem 'unicorn'
 
 group :development, :test do
   gem 'byebug'
