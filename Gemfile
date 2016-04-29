@@ -15,6 +15,7 @@ gem 'devise'
 gem 'bootstrap-sass'
 gem 'font-awesome-rails'
 gem 'unicorn'
+gem "passenger", ">= 5.0.25", require: "phusion_passenger/rack_handler"
 
 group :development, :test do
   gem 'byebug'
