@@ -69,3 +69,19 @@
   visibility: visible;
   transition: opacity 0.5s;
 }
+
+#username-title {
+  margin-top: 50px;
+  left: 0;
+  line-height: 200px;
+  margin: auto;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+#username-title h1 {
+  font-family: Fitzgerald;
+  color: white;
+  font-size: 100px;
+}

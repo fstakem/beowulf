@@ -11,4 +11,8 @@ class User < ActiveRecord::Base
   has_many :user_skills
   has_many :links,      through: :user_links
   has_many :skills,     through: :user_skills
+
+  def name
+    return first_name + ' ' + last_name
+  end
 end

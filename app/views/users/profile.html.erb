@@ -1,7 +1,9 @@
 <div id="container">
   <img id="transparent-img" src="<%= image_url("placeholder.png") %>" usemap="#background-image-map">
   <div id="background-img">
-    <h1><%= @observed_user.username %></h1>
+    <div id="username-title">
+      <h1><%= @observed_user.name %></h1>
+    </div>
     
     <div class="overlay keyboard">
       <div class="keyboard-text"></div>
