@@ -19,10 +19,15 @@
 
 body { 
   padding: 45px 0 0 0;
+  background-color: #E4F0F3;
 }
 
 .navbar {
 } 
+
+.navbar.navbar-inverse.navbar-fixed-top {
+  background-color: #233445;
+}
 
 .collapse navbar-collapse {
 
@@ -31,4 +36,31 @@ body {
 .nav.navbar-nav {
   float: right;
   margin-right: 98px;
+}
+
+.navbar-brand {
+  font-family: Fitzgerald;
+  color: white;
+  font-size: 20px;
+}
+
+.nav.navbar-nav li {
+  font-family: Fitzgerald;
+  color: white;
+  font-size: 20px;
+}
+
+.page-title {
+  font-family: Fitzgerald;
+  font-size: 45px;
+}
+
+.main-content-container {
+  background-color: #E5F2BD;
+  padding-right: 25px;
+  padding-left: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 40px;
+  border-radius: 5px;
 }
