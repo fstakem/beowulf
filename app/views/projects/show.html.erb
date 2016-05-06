@@ -1,5 +1,10 @@
-<h1 class="page-title">Project: <%= @project.name %></h1>
-<p><%= @project.long_description %></p>
-<% @project.photos.each do |photo| %>
-  <img src=<%= photo.get_path %> height="60" width="60">
-<% end %>
+<h1 class="page-title"><%= @project.name %></h1>
+
+<div class="project-individual-content">
+  <p><%= @project.long_description %></p>
+  <% @project.photos.each_with_index do |photo, index| %>
+    <div class="project-photo" id="project-photo-<%=index%>">
+      <img class="small-project-img" id="small-project-img-<%=index%>" src=<%= photo.get_path %> height="60" width="60">
+    </div>
+  <% end %>
+</div>

@@ -1,5 +1,7 @@
 <h1 class="page-title">Photos</h1>
 
-<% @photos.each do |photo| %>
-  <img src=<%= photo.get_path %> height="60" width="60">
+<% @photos.each_with_index do |photo, index| %>
+  <div class="gallery-photo" id="gallery-photo-<%=index%>">
+    <img class="small-gallery-img" id="small-gallery-img-<%=index%>" src=<%= photo.get_path %> height="100" width="100">
+  </div>
 <% end %>

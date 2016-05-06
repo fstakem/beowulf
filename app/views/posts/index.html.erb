@@ -4,13 +4,15 @@
   <% @posts.each do |post| %>
     <div class="post-content">
       <li>
-        <%= link_to post.title, post_path(id: post.id) %>
+        <%= link_to post.title, post_path(id: post.id), class: "project-post-link" %>
       </li>
       <p>
         <%= post.text %>
       </p>
-      <% post.photos.each do |photo| %>
-        <img src=<%= photo.get_path %> height="60" width="60">
+      <% post.photos.each_with_index do |photo, index| %>
+        <div class="post-photo" id="post-photo-<%=index%>">
+          <img class="small-post-img" id="small-post-img-<%=index%>" src=<%= photo.get_path %> height="60" width="60">
+        </div>
       <% end %>
     </div>
   <% end %>

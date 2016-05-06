@@ -70,6 +70,11 @@
   transition: opacity 0.5s;
 }
 
+.user-photo {
+  display:inline;
+  margin-right: 8px;
+}
+
 #username-title {
   margin-top: 50px;
   left: 0;
@@ -86,4 +91,10 @@
   font-size: 100px;
   background-color:rgba(0,0,0,0.0);
   text-shadow:#474747 3px 5px 2px;
+}
+
+.about-me-content {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
 }

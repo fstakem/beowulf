@@ -6,28 +6,36 @@
 <h3>Eduction</h3>
 <ul>
   <% @schools.each do |school| %>
-    <li><%= school.name %></li>
+    <div class="resume-school">
+      <li><%= school.name %></li>
+    </div>
   <% end %>
 </ul>
 
 <h3>Work</h3>
 <ul>
   <% @jobs.each do |job| %>
-    <li><%= job.company %></li>
+    <div class="resume-job">
+      <li><%= job.company %></li>
+    </div>
   <% end %>
 </ul>
 
 <h3>Projects</h3>
 <ul>
   <% @projects.each do |project| %>
-    <li><%= link_to project.name, project_path(id: project.id) %></li>
-    <p><%= project.long_description %></p>
+    <div class="resume-project">
+      <li><%= link_to project.name, project_path(id: project.id) %></li>
+      <p><%= project.long_description %></p>
+    </div>
   <% end %>
 </ul>
 
 <h3>Skills</h3>
 <ul>
   <% @skills.each do |skill| %>
-    <li><%= skill.name %></li>
+    <div class="resume-skill">
+      <li><%= skill.name %></li>
+    </div>
   <% end %>
 </ul>

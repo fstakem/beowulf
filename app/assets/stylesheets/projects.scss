@@ -3,5 +3,25 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .project-content {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
+  margin-left: -15px;
+  margin-right: 20px;
+}
+
+.project-individual-content {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.project-content li {
+  list-style: none;
+}
+
+.project-photo {
+  display: inline;
+}
+
+.small-project-img {
+  border-radius: 3px;
 }

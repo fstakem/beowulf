@@ -1,5 +1,10 @@
-<h1 class="page-title">Post: <%= @post.title %></h1>
-<p><%= @post.text %></p>
-<% @post.photos.each do |photo| %>
-  <img src=<%= photo.get_path %> height="60" width="60">
-<% end %>
+<h1 class="page-title"><%= @post.title %></h1>
+
+<div class="post-individual-content">
+  <p><%= @post.text %></p>
+  <% @post.photos.each do |photo| %>
+    <div class="post-photo">
+      <img src=<%= photo.get_path %> height="60" width="60">
+    </div>
+  <% end %>
+</div>

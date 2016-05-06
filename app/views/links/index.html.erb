@@ -2,8 +2,10 @@
 
 <ul>
   <% @links.each do |link| %>
-    <li>
-      <a href="<%= link.url %>"><%= link.text %></a>
-    </li>
+    <div class="user-link-content">
+      <li>
+        <a class="user-link" href="<%= link.url %>"><%= link.text %></a>
+      </li>
+    </div>
   <% end %>
 </ul>

@@ -53,7 +53,7 @@ body {
 .page-title {
   font-family: Fitzgerald;
   font-size: 45px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .main-content-container {
@@ -66,5 +66,24 @@ body {
   padding-top: 3px;
   padding-bottom: 10px;
   margin-top: 100px;
+  margin-bottom: 80px;
   border-radius: 5px;
+}
+
+.gallery-photo {
+  
+}
+
+.small-gallery-img {
+  border-radius: 1px;
+}
+
+.project-post-link {
+  color: #333333;
+  font-size: 22px;
+}
+
+.project-post-link:hover {
+  color: #E4F0F3;
+  text-decoration:none;
 }
