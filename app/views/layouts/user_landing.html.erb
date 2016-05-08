@@ -10,7 +10,8 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
   </head>
-  <body id="desk-body">
+  <body class="<%= controller_name %> <%= action_name %>" id="desk-body" data-no-turbolink="true">
     <%= yield %>
   </body>
 </html>
+

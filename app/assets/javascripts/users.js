@@ -132,19 +132,14 @@ function newKey(key) {
     }
 }
 
+/*
 function pageLoaded() {
   console.log("READY!");
 
+  
+
   $(window).resize(pageResize);
 
-// JS key handling
-/*
-  document.onkeypress = function(event) {
-    event.preventDefault();
-    var key = String.fromCharCode(event.keyCode);
-    processRealKeyboard(key);
-  };
-  */
 
   // other keypress lib
  // var keyListener = new window.keypress.Listener();
@@ -203,7 +198,8 @@ function pageLoaded() {
   linkFinder = new Fuse(links, options);
 
 }
+*/
 
 $(document).ready( function() {
-  pageLoaded();
+  //pageLoaded();
 });

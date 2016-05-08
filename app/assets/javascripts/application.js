@@ -16,4 +16,5 @@
 //= require bootstrap-sprockets
 //= require mousetrap/mousetrap
 //= require fuse.js/src/fuse
+//= require ready
 //= require_tree .
