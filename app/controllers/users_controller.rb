@@ -1,12 +1,12 @@
 class UsersController < ApplicationController
-  before_action :find_observed_user, only: [:profile, :about_me, :resume]
+  before_action :find_observed_user, only: [:user_landing, :about_me, :resume]
   layout :resolve_layout
 
-  def landing
+  def main_landing
     @users = User.all
   end
 
-  def profile
+  def user_landing
   end
 
   def about_me
@@ -24,10 +24,10 @@ class UsersController < ApplicationController
 
   def resolve_layout
     case action_name
-    when "profile"
-      "user_profile_landing"
-    when "landing", 
-      "main"
+    when "main_landing"
+      "main_landing"
+    when "user_landing", 
+      "user_landing"
     when "about_me", "resume"
       "user_profile"
     else

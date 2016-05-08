@@ -11,8 +11,8 @@ Rails.application.routes.draw do
   end
 
   devise_for :users
-  root 'users#landing'
-  get ':username'             => 'users#profile'
+  root 'users#main_landing'
+  get ':username'             => 'users#user_landing'
   get ':username/about_me'    => 'users#about_me'
   get ':username/resume'      => 'users#resume'
 

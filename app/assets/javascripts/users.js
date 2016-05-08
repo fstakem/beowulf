@@ -4,6 +4,12 @@ var linkFinder;
 var screenText = '';
 var likelyLink = null;
 
+function pageResize() {
+  var height = $(window).height();
+  var width = $(window).width()
+  console.log('Window: ' + height + 'x' + width);
+}
+
 function findTextCompletion() {
   likelyLink = linkFinder.search(screenText)[0];
   var likelyStr = likelyLink.token;
@@ -128,6 +134,8 @@ function newKey(key) {
 
 function pageLoaded() {
   console.log("READY!");
+
+  $(window).resize(pageResize);
 
 // JS key handling
 /*
