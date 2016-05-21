@@ -72,7 +72,8 @@ body {
 } 
 
 .navbar.navbar-inverse.navbar-fixed-top {
-  background-color: #233445;
+  background-color: transparent;
+  border: 0;
 }
 
 .collapse navbar-collapse {
@@ -81,19 +82,45 @@ body {
 
 .nav.navbar-nav {
   float: right;
-  margin-right: 98px;
+  margin-right: -180px;
+}
+
+.navbar-inverse .navbar-header .navbar-brand {
+  color: #233445;
 }
 
 .navbar-brand {
   font-family: Fitzgerald;
-  color: white;
   font-size: 20px;
+  color: #233445;
 }
 
 .nav.navbar-nav li {
   font-family: Fitzgerald;
-  color: white;
-  font-size: 20px;
+  font-size: 18px;
+}
+
+.nav.navbar-nav li a {
+  color: #233445;
+}
+
+.nav.navbar-nav li a:hover {
+  color: #233445;
+}
+
+.nav.navbar-nav li a:hover + hr{
+  display: block;
+}
+
+hr {
+  display: none;
+  height: .2rem;
+  width: 80%;
+  background: #233445;
+  border: none;
+  padding-top: 0px;
+  margin-top: -10px;
+  margin-right: 10%;
 }
 
 .page-title {

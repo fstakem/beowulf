@@ -13,14 +13,35 @@
 
     <div id="navbar" class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
-        <!--<li class="active"><a href="#">Home</a></li>-->
-        <li><a href="<%= url_for(:controller => "users", :action => "about_me") %>">About</a></li>
-        <li><a href="<%= projects_path %>">Projects</a></li>
-        <li><a href="<%= posts_path %>">Blog</a></li>
-        <li><a href="<%= skills_path %>">Skills</a></li>
-        <li><a href="<%= url_for(:controller => "users", :action => "resume") %>">Resume</a></li>
-        <li><a href="<%= photos_path %>">Photos</a></li>
-        <li><a href="<%= links_path %>">Links</a></li>
+        <li>
+          <a href="<%= url_for(:controller => "users", :action => "about_me") %>">About</a>
+          <hr />
+        </li>
+        <li>
+          <a href="<%= projects_path %>">Projects</a>
+          <hr />
+        </li>
+        <li>
+          <a href="<%= posts_path %>">Blog</a>
+          <hr />
+        </li>
+        <li>
+          <a href="<%= skills_path %>">Skills</a>
+          <hr />
+        </li>
+        <li>
+          <a href="<%= url_for(:controller => "users", :action => "resume") %>">Resume</a>
+          <hr />
+        </li>
+        <li>
+          <a href="<%= photos_path %>">Photos</a>
+          <hr />
+        </li>
+        <li>
+          <a href="<%= links_path %>">Links</a>
+          <hr />
+        </li>
+
       </ul>
     </div><!--/.nav-collapse -->
 
