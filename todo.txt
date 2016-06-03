@@ -1,0 +1,25 @@
+Component
+1.  Navbar
+    a.  Make sure content is not visible underneath n scroll
+    b.  Design look and feel for when item selected -> underline or not
+
+2.  Extended navigation
+    a.  Read webpage
+    b.  Prototype rough design
+    
+3.  About
+4.  Projects
+5.  Blog
+6.  Skills
+7.  Resume
+8.  Photos
+9.  Links
+10. Intro image
+11. Landing page
+  a.  Scale position of clickable according in js
+  b.  Make clickable change on page size change
+  c.  Use higher resolution image
+  d.  Have loading item
+  e.  Use progressive download image
+12. All
+    a.  Use more modern font
