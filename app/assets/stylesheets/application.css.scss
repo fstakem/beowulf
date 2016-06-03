@@ -71,6 +71,27 @@ body {
 .navbar {
 } 
 
+#initials {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-top: 5px;
+  margin-right: 10px;
+  background-color: #44453F;
+}
+
+.first-initial {
+  margin-top: -7px;
+  margin-left: -5px;
+  color: #E4F0F3;
+}
+
+.second-initial {
+  margin-top: -12px;
+  margin-left: 5px;
+  color: #E4F0F3;
+}
+
 .navbar.navbar-inverse.navbar-fixed-top {
   background-color: #E4F0F3;
   border: 0;

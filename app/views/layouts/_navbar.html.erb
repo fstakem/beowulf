@@ -8,6 +8,10 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
+      <a class="navbar-brand" id="initials" href="<%= url_for(:controller => "users", :action => "user_landing") %>">
+        <div class="first-initial"><%= @observed_initials[0] %></div>
+        <div class="second-initial"><%= @observed_initials[1] %></div>
+      </a>
       <a class="navbar-brand" href="<%= url_for(:controller => "users", :action => "user_landing") %>"><%= @observed_user.name %></a>
     </div>
 

@@ -10,6 +10,8 @@ class ApplicationController < ActionController::Base
   def find_observed_user
     username = params['username']
     @observed_user = User.find_by username: username.downcase
+    names = @observed_user.name.split()
+    @observed_initials = [names[0][0], names[1][0]]
 
     if @observed_user.nil?
       render_404
