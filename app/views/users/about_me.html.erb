@@ -1,5 +1,20 @@
-<h1 class="page-title">About me</h1>
+<div class="about-img"  style="background-image:url( <%= image_url("alt.jpg") %> )"></div>
 
-<div class="about-me-content"
-  <p><%= @observed_user.about_me %></p>
+<div class="row about-me-row">
+  <div class="col-sm-3 col-md-3 col-lg-3"></div>
+
+  <div class="col-sm-6 col-md-6 col-lg-6">
+    <h1 >
+      <div class="about-me-title">
+      About me
+      </div>
+    </h1>
+
+    <div class="about-me-content"
+      <p><%= @observed_user.about_me %></p>
+    </div>
+  </div>
+
+  <div class="col-sm-3 col-md-3 col-lg-3"></div>
+
 </div>

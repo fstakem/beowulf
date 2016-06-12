@@ -1,0 +1,19 @@
+<div class="row project-title-row">
+  <%= link_to project.name, project_path(id: project.id), class: "project-post-link" %>
+</div>
+
+<div class="row project-detail-row">
+
+  <div class="col-sm-9 col-md-9 col-lg-9">
+    <%= project.long_description %>
+  </div>
+
+  <div class="col-sm-3 col-md-3 col-lg-3">
+    <% project.photos.each_with_index do |photo, index| %>
+    <div class="project-photo" id="project-photo-<%=index%>">
+      <img class="small-project-img" id="small-project-img-<%=index%>" src=<%= photo.get_path %> height="60" width="60">
+    </div>
+  <% end %>
+  </div>
+
+</div>

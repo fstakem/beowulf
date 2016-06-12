@@ -30,6 +30,19 @@
   z-index: 0;
 }
 
+.about-img {
+  position: absolute; 
+  top: 0; 
+  left:0;
+  width: 100%;
+  height: 350px;
+  background-size:     cover;
+  background-repeat:   no-repeat;
+  background-position: center center;
+  z-index: 0;
+  margin-top: 100px;
+}
+
 .overlay {
   position:fixed;
   font-size: 35px;
@@ -98,8 +111,51 @@
   text-shadow:#474747 3px 5px 2px;
 }
 
+.container .page-title {
+  width: 180px;
+}
+
+.container .page-title .page-title-text{
+  background-color: #B88E7A;
+  margin-left: -320px;
+  margin-right: -100px;
+  margin-top: -38px;
+  padding-left: 10px;
+  padding-top: 5px;
+  z-index: 11;
+  width: 170px;
+  border-radius: 3px;
+  position:absolute;
+  box-shadow: 2px 2px 5px #44453F;
+}
+
+.row.about-me-row {
+  margin-top: 210px;
+}
+
 .about-me-content {
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 10px;
+  background-color: #4F6797;
+  padding-right: 25px;
+  padding-left: 25px;
+  padding-top: 45px;
+  padding-bottom: 10px;
+  border-radius: 3px;
+  
+}
+
+.about-me-title {
+  font-family: Fitzgerald;
+  width: 140px;
+  padding-top: 8px;
+  padding-left: 10px;
+  padding-right: 5px;
+  padding-bottom: 3px;
+  background-color: #B88E7A;
+  margin-bottom: -20px;
+  margin-left: -10px;
+  border-radius: 2px;
+  z-index: 20;
+  position: absolute;
+  top: 0;
+  box-shadow: 2px 2px 5px #44453F;
 }

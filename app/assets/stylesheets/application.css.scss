@@ -64,7 +64,7 @@
 }
 
 body { 
-  padding: 45px 0 0 0;
+  padding: 90px 0 0 0;
   background-color: #E4F0F3;
 }
 
@@ -147,25 +147,16 @@ hr {
 .page-title {
   font-family: Fitzgerald;
   font-size: 45px;
-  margin-bottom: 20px;
-}
-
-.main-content-container {
-  background-color: #B88E7A;
-  //e8ea8a yellowish
-  //ebca9a redish
-  //B88E7A dark reddish
-  padding-right: 25px;
-  padding-left: 25px;
-  padding-top: 3px;
-  padding-bottom: 10px;
-  margin-top: 100px;
-  margin-bottom: 80px;
-  border-radius: 5px;
+  margin-bottom: 40px;
+  padding-top: 40px;
 }
 
 .gallery-photo {
   
+}
+
+.user-profile-container {
+
 }
 
 .small-gallery-img {
@@ -178,6 +169,6 @@ hr {
 }
 
 .project-post-link:hover {
-  color: #E4F0F3;
+  color: #4F6797;
   text-decoration:none;
 }

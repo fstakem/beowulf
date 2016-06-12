@@ -10,9 +10,9 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
   </head>
+
   <body class="<%= controller_name %> <%= action_name %>" data-no-turbolink="true">
-    <%= render 'layouts/navbar' %>
-    <div class="container user-profile-container">
+      <%= render 'layouts/navbar' %>
       <%= yield %>
     </div>
   </body>
