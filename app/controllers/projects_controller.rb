@@ -9,5 +9,6 @@ class ProjectsController < ApplicationController
   def show
     id = params[:id]
     @project = Project.find(id)
+    @layout_index = params[:layout_index]
   end
 end

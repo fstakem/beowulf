@@ -1,10 +1,15 @@
-<h1 class="page-title"><%= @project.name %></h1>
-
-<div class="project-individual-content">
-  <p><%= @project.long_description %></p>
-  <% @project.photos.each_with_index do |photo, index| %>
-    <div class="project-photo" id="project-photo-<%=index%>">
-      <img class="small-project-img" id="small-project-img-<%=index%>" src=<%= photo.get_path %> height="60" width="60">
-    </div>
-  <% end %>
+<div class="row">
+  <div class="col-sm-3 col-md-3 col-lg-3">
+    <h1 class="page-title">Projects</h1>
+  </div>
+  <div class="col-sm-9 col-md-9 col-lg-9"></div>
 </div>
+
+<% if @layout_index == "1" %>
+  <%= render 'title',         project: @project %>
+  <%= render 'detail_1',      project: @project %>
+<% elsif @layout_index == "2" %>
+  <%= render 'title',         project: @project %>
+  <%= render 'detail_2',      project: @project %>
+<% end %>
+

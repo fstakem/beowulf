@@ -9,8 +9,10 @@
 <% @projects.each_with_index do |project, index| %>
 
   <% if index % 2 == 0 %>
-    <%= render 'detail_1', project: project %>
+    <%= render 'title_link',  project: project %>
+    <%= render 'detail_1',      project: project %>
   <% else %>
-    <%= render 'detail_2', project: project %>
+    <%= render 'title_link',  project: project %>
+    <%= render 'detail_2',      project: project %>
   <% end %>
 <% end %>

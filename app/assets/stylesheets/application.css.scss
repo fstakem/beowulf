@@ -95,6 +95,8 @@ body {
 .navbar.navbar-inverse.navbar-fixed-top {
   background-color: #E4F0F3;
   border: 0;
+  margin-bottom: 60px;
+  padding-bottom: 60px;
 }
 
 .collapse navbar-collapse {
@@ -161,6 +163,11 @@ hr {
 
 .small-gallery-img {
   border-radius: 1px;
+}
+
+.project-post-title {
+  color: #333333;
+  font-size: 22px;
 }
 
 .project-post-link {
