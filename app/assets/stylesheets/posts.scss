@@ -1,6 +1,3 @@
-// Place all the styles related to the Posts controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
 
 .post-content {
   margin-bottom: 20px;
@@ -14,14 +11,20 @@
   margin-bottom: 10px;
 }
 
-.post-content li {
-  list-style: none;
-}
-
 .post-photo {
   display: inline;
 }
 
 .small-post-img {
   border-radius: 3px;
+}
+
+.row.post-title-row {
+  margin-left: 0px;
+  margin-bottom: 15px;
+}
+
+.row.post-detail-row {
+  margin-left: -15px;
+  margin-bottom: 60px;
 }

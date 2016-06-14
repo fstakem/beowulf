@@ -1,10 +1,14 @@
-<h1 class="page-title"><%= @post.title %></h1>
-
-<div class="post-individual-content">
-  <p><%= @post.text %></p>
-  <% @post.photos.each do |photo| %>
-    <div class="post-photo">
-      <img src=<%= photo.get_path %> height="60" width="60">
-    </div>
-  <% end %>
+<div class="row">
+  <div class="col-sm-3 col-md-3 col-lg-3">
+    <h1 class="page-title">Posts</h1>
+  </div>
+  <div class="col-sm-9 col-md-9 col-lg-9"></div>
 </div>
+
+<% if @layout_index == "1" %>
+  <%= render 'title',         post: @post %>
+  <%= render 'detail_1',      post: @post %>
+<% elsif @layout_index == "2" %>
+  <%= render 'title',         post: @post %>
+  <%= render 'detail_2',      post: @post %>
+<% end %>

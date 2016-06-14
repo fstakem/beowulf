@@ -1,19 +1,19 @@
-<h1 class="page-title">Posts</h1>
 
-<ul>
-  <% @posts.each do |post| %>
-    <div class="post-content">
-      <li>
-        <%= link_to post.title, post_path(id: post.id), class: "project-post-link" %>
-      </li>
-      <p>
-        <%= post.text %>
-      </p>
-      <% post.photos.each_with_index do |photo, index| %>
-        <div class="post-photo" id="post-photo-<%=index%>">
-          <img class="small-post-img" id="small-post-img-<%=index%>" src=<%= photo.get_path %> height="60" width="60">
-        </div>
-      <% end %>
-    </div>
+<div class="row">
+  <div class="col-sm-3 col-md-3 col-lg-3">
+    <h1 class="page-title">Posts</h1>
+  </div>
+  <div class="col-sm-9 col-md-9 col-lg-9"></div>
+</div>
+
+<% @posts.each_with_index do |post, index| %>
+
+  <% if index % 2 == 0 %>
+    <%= render 'title_link',    post: post, layout_index: 1 %>
+    <%= render 'detail_1',      post: post %>
+  <% else %>
+    <%= render 'title_link',    post: post, layout_index: 2 %>
+    <%= render 'detail_2',      post: post %>
   <% end %>
-</ul>
+<% end %>
+

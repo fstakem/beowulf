@@ -10,5 +10,6 @@ class PostsController < ApplicationController
   def show
     id = params[:id]
     @post = Post.find(id)
+    @layout_index = params[:layout_index]
   end
 end

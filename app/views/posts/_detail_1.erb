@@ -1,0 +1,15 @@
+<div class="row post-detail-row">
+
+  <div class="col-sm-9 col-md-9 col-lg-9">
+    <%= post.text %>
+  </div>
+
+  <div class="col-sm-3 col-md-3 col-lg-3">
+    <% post.photos.each_with_index do |photo, index| %>
+    <div class="post-photo" id="post-photo-<%=index%>">
+      <img class="small-post-img" id="small-post-img-<%=index%>" src=<%= photo.get_path %> height="60" width="60">
+    </div>
+  <% end %>
+  </div>
+
+</div>
