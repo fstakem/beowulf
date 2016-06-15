@@ -64,7 +64,7 @@
 }
 
 body { 
-  padding: 90px 0 0 0;
+  padding: 100px 0 0 0;
   background-color: #E4F0F3;
 }
 
@@ -95,8 +95,9 @@ body {
 .navbar.navbar-inverse.navbar-fixed-top {
   background-color: #E4F0F3;
   border: 0;
-  margin-bottom: 60px;
   padding-bottom: 60px;
+  margin-bottom: 30px;
+  height: 100px;
 }
 
 .collapse navbar-collapse {
@@ -150,15 +151,10 @@ hr {
   font-family: Fitzgerald;
   font-size: 45px;
   margin-bottom: 40px;
-  padding-top: 40px;
 }
 
 .gallery-photo {
   
-}
-
-.user-profile-container {
-
 }
 
 .small-gallery-img {
@@ -178,4 +174,13 @@ hr {
 .project-post-link:hover {
   color: #4F6797;
   text-decoration:none;
+}
+
+.row.title-row {
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+.container.user-profile-container {
+  margin-top: 0px;
 }
