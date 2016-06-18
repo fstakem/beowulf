@@ -11,10 +11,6 @@
   margin-bottom: 10px;
 }
 
-.post-photo {
-  display: inline;
-}
-
 .small-post-img {
   border-radius: 3px;
 }
@@ -27,4 +23,17 @@
 .row.post-detail-row {
   margin-left: -15px;
   margin-bottom: 60px;
+}
+
+.post-all-photos {
+  background-color: #4F6797;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+}
+
+.row.post-photo-row {
+  margin-bottom: 10px;
 }

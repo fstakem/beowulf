@@ -10,4 +10,10 @@ class Project < ActiveRecord::Base
   has_many :skills,   through: :project_skills
   has_many :links,    through: :project_links
   has_many :photos,   through: :project_photos
+
+  attr_accessor :grouped_photos
+
+  def group_photos(num_together)
+    @grouped_photos = self.photos.each_slice(num_together).to_a
+  end
 end

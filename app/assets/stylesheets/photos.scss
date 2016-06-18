@@ -1,3 +1,28 @@
-// Place all the styles related to the Photos controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.row.photo-group-row {
+  margin-left: 0px;
+  height: 320px;
+  padding: 35px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.all-photos {
+  background-color: #4F6797;
+  border-radius: 5px;
+  margin-bottom: 80px;
+}
+
+.individual-photo {
+  border-radius: 6px;
+}
+
+.individual-photo:hover{
+  border-radius: 8px;
+  box-shadow: 7px 7px 7px;
+}
+
+.small-gallery-img {
+  border-radius: 1px;
+  box-shadow: 5px 5px 3px;
+}

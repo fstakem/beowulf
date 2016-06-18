@@ -1,0 +1,11 @@
+<div class="row photo-group-row detail">
+
+  <% (0..4).each do |index| %>
+    <div class="col-sm-3 col-md-3 col-lg-3">
+      <% if group.count > index %>
+        <img class="individual-photo" src=<%= group[index].get_path %> height="250" width="250">
+      <% end %>
+    </div>
+  <% end %>
+
+</div>
