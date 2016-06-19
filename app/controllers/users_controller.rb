@@ -28,7 +28,7 @@ class UsersController < ApplicationController
       "main_landing"
     when "user_landing", 
       "user_landing"
-    when "about_me", "resume"
+    when "about_me"
       "user_about"
     when "resume"
       "user_profile"

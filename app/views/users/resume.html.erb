@@ -1,41 +1,27 @@
-<h1 class="page-title">Resume</h1>
+<div class="row title-row">
+  <div class="col-sm-3 col-md-3 col-lg-3">
+    <h1 class="page-title">Resume</h1>
+  </div>
+  <div class="col-sm-9 col-md-9 col-lg-9"></div>
+</div>
 
-<h3>Objective</h3>
-<p>TODO</p>
+<%= render 'resume_objective' %>
+<%= render 'resume_school' %>
+<%= render 'resume_job' %>
+<%= render 'resume_project' %>
+<%= render 'resume_skill' %>
 
-<h3>Eduction</h3>
-<ul>
-  <% @schools.each do |school| %>
-    <div class="resume-school">
-      <li><%= school.name %></li>
-    </div>
-  <% end %>
-</ul>
 
-<h3>Work</h3>
-<ul>
-  <% @jobs.each do |job| %>
-    <div class="resume-job">
-      <li><%= job.company %></li>
-    </div>
-  <% end %>
-</ul>
 
-<h3>Projects</h3>
-<ul>
-  <% @projects.each do |project| %>
-    <div class="resume-project">
-      <li><%= link_to project.name, project_path(id: project.id) %></li>
-      <p><%= project.long_description %></p>
-    </div>
-  <% end %>
-</ul>
 
-<h3>Skills</h3>
-<ul>
-  <% @skills.each do |skill| %>
-    <div class="resume-skill">
-      <li><%= skill.name %></li>
-    </div>
-  <% end %>
-</ul>
+
+
+
+
+
+
+
+
+
+
+
