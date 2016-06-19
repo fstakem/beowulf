@@ -10,13 +10,15 @@
     </div>
   </div>
 
-  <% @skills.each do |skill| %>
+
+  <% @skills_fomatted.each do |group, skills| %>
     <div class="row resume-subsection-row">
       <div class="col-sm-1 col-md-1 col-lg-1 resume-date" style="width:120px">
+        <%= group %>
       </div>
 
       <div class="col-sm-10 col-md-10 col-lg-10">
-        <%= skill.name %>
+        <%= skills %>
       </div>
     </div>
   <% end %>

@@ -13,11 +13,11 @@
   <% @projects.each do |project| %>
     <div class="row resume-subsection-row">
       <div class="col-sm-1 col-md-1 col-lg-1 resume-date" style="width:120px">
-        1/02–12/04
+        <%= project.start_date.strftime('%m/%y') unless project.start_date.nil? %>-<%= project.end_date.strftime('%m/%y') unless project.end_date.nil? %>
       </div>
 
       <div class="col-sm-10 col-md-10 col-lg-10">
-        <%= link_to project.name, project_path(id: project.id) %>
+        <%= link_to project.name, project_path(id: project.id, layout_index: 1), class: "resume-project-link" %>
         <p><%= project.long_description %></p>
       </div>
     </div>
