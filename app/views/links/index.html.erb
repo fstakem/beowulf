@@ -1,11 +1,15 @@
-<h1 class="page-title">Links</h1>
+<div class="row title-row">
+  <div class="col-sm-3 col-md-3 col-lg-3">
+    <h1 class="page-title">Links</h1>
+  </div>
+  <div class="col-sm-9 col-md-9 col-lg-9"></div>
+</div>
 
-<ul>
-  <% @links.each do |link| %>
-    <div class="user-link-content">
-      <li>
-        <a class="user-link" href="<%= link.url %>"><%= link.text %></a>
-      </li>
-    </div>
-  <% end %>
-</ul>
+<% @links.each_with_index do |link, index| %>
+
+  <div class="user-link-content">
+    <a class="user-link" href="<%= link.url %>"><%= link.text %></a>
+  </div>
+
+<% end %>
+

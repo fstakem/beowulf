@@ -1,11 +1,6 @@
-// Place all the styles related to the Links controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-
-
 .user-link-content {
-  list-style: none;
-  margin-left: -15px;
+  margin-left: 0px;
+  margin-bottom: 2px;
 }
 
 .user-link {
@@ -14,6 +9,6 @@
 }
 
 .user-link:hover {
-  color: #E4F0F3;
+  color: #4F6797;
   text-decoration:none;
 }
