@@ -17,6 +17,7 @@ class UsersController < ApplicationController
     @jobs = @observed_user.jobs.all()
     @projects = @observed_user.projects.all()
     @skills = @observed_user.skills.all()
+    @grouped_skills = @skills.group_by(&:category)
   end
 
   # ----------------------------------------------------------------------------

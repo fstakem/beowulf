@@ -2,7 +2,6 @@ Rails.application.routes.draw do
   scope ':username' do 
     resources :schools
     resources :photos
-    resources :skills
     resources :tasks
     resources :jobs
     resources :links
