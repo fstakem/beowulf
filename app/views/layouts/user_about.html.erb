@@ -13,7 +13,9 @@
 
   <body class="<%= controller_name %> <%= action_name %>" data-no-turbolink="true">
       <%= render 'layouts/navbar' %>
-      <%= yield %>
+      <div class="container user-profile-container">
+        <%= yield %>
+      </div>
     </div>
   </body>
 </html>
