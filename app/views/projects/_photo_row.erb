@@ -1,8 +1,8 @@
 <div class="row project-photo-row">
   <% (0..2).each do |index| %>
-    <div class="col-sm-4 col-md-4 col-lg-4">
+    <div class="col-sm-4 col-md-4 col-lg-4 project-photo-col">
       <% if photo_group.count > index %>
-        <img class="small-project-img" id="small-project-img-<%=index%>" src=<%= photo_group[index].get_path %> height="65" width="65">
+        <img class="center-block small-project-img" id="small-project-img-<%=index%>" src=<%= photo_group[index].get_path %> height="65" width="65">
       <% end %>
     </div>
   <% end %>

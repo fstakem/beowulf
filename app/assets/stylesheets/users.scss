@@ -165,16 +165,14 @@
 .row.resume-section-row {
   margin-bottom: 50px;
   border-radius: 5px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   margin-left: 0px;
   margin-right: 0px;
 }
 
 .row.resume-subsection-row {
   margin-right: 0px;
-}
-
-.resume-date {
+  margin-bottom: 2px;
 }
 
 .sub-title-row .sub-title-bar {
@@ -213,4 +211,21 @@
 
 .row.aboutme-title-row {
   margin-top: 20px;
+}
+
+.job-description {
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+.row.resume-subsection-row ul {
+  list-style-type: none;
+}
+
+.row.resume-subsection-row ul li {
+  margin-left: -40px;
+}
+
+.resume-subsection-data {
+  margin-left: -8px;
 }

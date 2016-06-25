@@ -331,11 +331,26 @@ jobs.push(job)
 
 # Tasks
 tasks = []
-task = Task.new
-task.description    = 'TODO'
-task.job_id         = jobs[0].id
-task.save!
-tasks.push(task)
+jobs.each do |job|
+  task = Task.new
+  task.description    = 'Create Python Flask web site for QA testing group.'
+  task.job_id         = job.id
+  task.save!
+  tasks.push(task)
+
+  task = Task.new
+  task.description    = 'Designed and architected Java app for consumer electronics industry.'
+  task.job_id         = job.id
+  task.save!
+  tasks.push(task)
+
+  task = Task.new
+  task.description    = 'Wrote bash scripts for system integration tests.'
+  task.job_id         = job.id
+  task.save!
+  tasks.push(task)
+end
+
 
 # Skills
 skills = []

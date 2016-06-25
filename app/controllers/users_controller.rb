@@ -16,21 +16,13 @@ class UsersController < ApplicationController
     @schools = @observed_user.schools.all()
     
 
-    
     @jobs = @observed_user.jobs.all()
     @projects = @observed_user.projects.all()
+
     @skills = @observed_user.skills.all()
     grouped_skills = @skills.group_by(&:category)
-
-    @skills_fomatted = {}
-    grouped_skills.each do |group_name, skills|
-      skill_str = ''
-      skills.each do |skill|
-        skill_str <<  skill.name + ', '
-      end
-
-      @skills_fomatted[group_name.mb_chars.capitalize.to_s] = skill_str[0..-3]
-    end
+    @skills_fomatted = format_skills grouped_skills
+    
   end
 
   # ----------------------------------------------------------------------------
@@ -49,6 +41,21 @@ class UsersController < ApplicationController
     else
       "user_profile"
     end
+  end
+
+  def format_skills(grouped_skills)
+    skills_fomatted = {}
+
+    grouped_skills.each do |group_name, skills|
+      skill_str = ''
+      skills.each do |skill|
+        skill_str <<  skill.name + ', '
+      end
+
+      skills_fomatted[group_name.mb_chars.capitalize.to_s] = skill_str[0..-3]
+    end
+
+    return skills_fomatted
   end
 
 
