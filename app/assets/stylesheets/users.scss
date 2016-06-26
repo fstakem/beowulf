@@ -205,12 +205,13 @@
   margin-top: 50px;
 }
 
-.row.aboutme-text-row {
-  
-}
-
 .row.aboutme-title-row {
   margin-top: 20px;
+}
+
+.aboutme-title {
+  font-family: Fitzgerald;
+  font-size: 45px;
 }
 
 .job-description {
@@ -228,4 +229,16 @@
 
 .resume-subsection-data {
   margin-left: -8px;
+}
+
+.resume-subsection-title {
+  color: green;
+}
+
+.col-sm-1.col-md-1.col-lg-1.resume-date {
+  width: 120px;
+}
+
+.col-sm-10.col-md-10.col-lg-10.resume-school-data {
+  margin-bottom: 6px;
 }

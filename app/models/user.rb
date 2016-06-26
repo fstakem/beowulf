@@ -13,6 +13,6 @@ class User < ActiveRecord::Base
   has_many :skills,     through: :user_skills
 
   def name
-    return first_name + ' ' + last_name
+    return first_name.capitalize + ' ' + last_name.capitalize
   end
 end

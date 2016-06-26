@@ -12,6 +12,8 @@ user.last_name              = 'Stakem'
 user.phone_number           = '4045021676'
 user.title                  = 'Software Engineer'
 user.about_me               = 'About me to do'
+user.resume_objective       = 'To find a bitchin job'
+user.professional_title     = 'Software Engineer'
 user.save!
 
 # Projects
@@ -145,6 +147,7 @@ links.push(link)
 jobs = []
 job = Job.new
 job.title         = 'Software Engineer'
+job.title_long    = 'Middleware Software Engineer on Stack'
 job.company       = 'Medlytix'
 job.city          = 'Atlanta'  
 job.state         = 'GA' 
@@ -157,6 +160,7 @@ jobs.push(job)
 
 job = Job.new
 job.title         = 'Software Engineer'
+job.title_long    = 'Middleware Software Engineer on Stack'
 job.company       = 'Itaas a Cognizant Company'
 job.city          = 'Atlanta'  
 job.state         = 'GA' 
@@ -169,6 +173,7 @@ jobs.push(job)
 
 job = Job.new
 job.title         = 'Software Engineer'
+job.title_long    = 'Middleware Software Engineer on Stack'
 job.company       = 'Manheim'
 job.city          = 'Atlanta'  
 job.state         = 'GA' 
@@ -181,6 +186,7 @@ jobs.push(job)
 
 job = Job.new
 job.title         = 'Software Engineer'
+job.title_long    = 'Middleware Software Engineer on Stack'
 job.company       = 'Independent Contractor'
 job.city          = 'Atlanta'  
 job.state         = 'GA' 
@@ -193,6 +199,7 @@ jobs.push(job)
 
 job = Job.new
 job.title         = 'Software Engineer'
+job.title_long    = 'Middleware Software Engineer on Stack'
 job.company       = 'Medlytix'
 job.city          = 'Atlanta'  
 job.state         = 'GA' 
@@ -205,6 +212,7 @@ jobs.push(job)
 
 job = Job.new
 job.title         = 'Middleware Software Engineer'
+job.title_long    = 'Middleware Software Engineer on Stack'
 job.company       = 'Cisco Systems'
 job.city          = 'Atlanta'  
 job.state         = 'GA' 
@@ -217,6 +225,7 @@ jobs.push(job)
 
 job = Job.new
 job.title         = 'Software Engineer'
+job.title_long    = 'Middleware Software Engineer on Stack'
 job.company       = 'TVWorks Comcast'
 job.city          = 'San Francisco'  
 job.state         = 'CA' 
@@ -229,6 +238,7 @@ jobs.push(job)
 
 job = Job.new
 job.title         = 'Middleware Software Engineer'
+job.title_long    = 'Middleware Software Engineer on Stack'
 job.company       = 'Cisco Systems'
 job.city          = 'Atlanta'  
 job.state         = 'GA' 
@@ -241,6 +251,7 @@ jobs.push(job)
 
 job = Job.new
 job.title         = 'Research Assistant'
+job.title_long    = 'Middleware Software Engineer on Stack'
 job.company       = 'Georgia Tech Research Institute'
 job.city          = 'Atlanta'  
 job.state         = 'GA' 
@@ -253,6 +264,7 @@ jobs.push(job)
 
 job = Job.new
 job.title         = 'Research Assistant'
+job.title_long    = 'Middleware Software Engineer on Stack'
 job.company       = 'Georia Institute of Technology'
 job.city          = 'Atlanta'  
 job.state         = 'GA' 
@@ -265,6 +277,7 @@ jobs.push(job)
 
 job = Job.new
 job.title         = 'Researcher'
+job.title_long    = 'Middleware Software Engineer on Stack'
 job.company       = 'Motorola Labs'
 job.city          = 'Atlanta'  
 job.state         = 'GA' 
@@ -277,6 +290,7 @@ jobs.push(job)
 
 job = Job.new
 job.title         = 'Instructor'
+job.title_long    = 'Middleware Software Engineer on Stack'
 job.company       = 'Georgia Institute of Technology'
 job.city          = 'Atlanta'  
 job.state         = 'GA' 
@@ -289,6 +303,7 @@ jobs.push(job)
 
 job = Job.new
 job.title         = 'Teaching Assistant'
+job.title_long    = 'Middleware Software Engineer on Stack'
 job.company       = 'Georgia Institute of Technology'
 job.city          = 'Atlanta'  
 job.state         = 'GA' 
@@ -301,6 +316,7 @@ jobs.push(job)
 
 job = Job.new
 job.title         = 'Systems Engineer'
+job.title_long    = 'Middleware Software Engineer on Stack'
 job.company       = 'Lucent Technologies'
 job.city          = 'Atlanta'  
 job.state         = 'GA' 
@@ -889,9 +905,11 @@ school                    = School.new
 school.name               = 'Georgia Institute of Technology'   
 school.start_date         = Date.strptime('1/1/2002', '%m/%d/%Y')
 school.end_date           = Date.strptime('12/1/2004', '%m/%d/%Y')
-school.degree             = 'MS'    
+school.degree             = 'MS' 
+school.degree_long        = 'MS in Electrical and Computer Engineering'    
 school.major              = 'ECE'     
 school.gpa                = ''
+school.city               = 'Atlanta'
 school.graduation_date    = Date.strptime('12/1/2004', '%m/%d/%Y') 
 school.attending          = false 
 school.activities         = ''
@@ -903,9 +921,11 @@ school                    = School.new
 school.name               = 'Purdue University'   
 school.start_date         = Date.strptime('8/1/1994', '%m/%d/%Y')
 school.end_date           = Date.strptime('12/1/1998', '%m/%d/%Y')
-school.degree             = 'BS'    
+school.degree             = 'BS'
+school.degree_long        = 'BS in Electrical Engineering'    
 school.major              = 'EE'     
 school.gpa                = ''
+school.city               = 'West Lafayette'
 school.graduation_date    = Date.strptime('12/1/1998', '%m/%d/%Y') 
 school.attending          = false 
 school.activities         = ''

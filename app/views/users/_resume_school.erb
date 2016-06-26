@@ -6,20 +6,22 @@
     </div>
 
     <div class="col-sm-10 col-md-10 col-lg-10">
-      <h3>Eduction</h3>
+      <h3 class="resume-subsection-title">Eduction</h3>
     </div>
   </div>
 
   <% @schools.each do |school| %>
     <div class="row resume-subsection-row">
-      <div class="col-sm-1 col-md-1 col-lg-1" style="width:120px">
+      <div class="col-sm-1 col-md-1 col-lg-1 resume-date">
         <%= school.start_date.strftime('%m/%y') unless school.start_date.nil? %>-<%= school.end_date.strftime('%m/%y') unless school.end_date.nil? %>
       </div>
 
-      <div class="col-sm-10 col-md-10 col-lg-10">
+      <div class="col-sm-10 col-md-10 col-lg-10 resume-school-data">
         <div class="resume-subsection-data">
-          <span><b><%= school.degree %></b>,</span>
-          <span><i><%= school.name %></i>.</span>
+          <span><b><%= school.degree_major %></b>,</span>
+          <span><i><%= school.name %></i>, </span>
+          <span><%= school.city %>.</span>
+          <div><%= school.degree_long %></div>
         </div>
       </div>
     </div>

@@ -5,8 +5,10 @@ class CreateSchools < ActiveRecord::Migration
       t.date        :start_date,        null: false
       t.date        :end_date
       t.string      :degree,            null: false
+      t.string      :degree_long
       t.string      :major,             null: false
       t.string      :gpa
+      t.string      :city
       t.date        :graduation_date,   null: false
       t.boolean     :attending,         null: false, default: false
       t.text        :activities

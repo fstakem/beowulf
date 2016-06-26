@@ -2,6 +2,7 @@ class CreateJobs < ActiveRecord::Migration
   def change
     create_table :jobs do |t|
       t.string      :title,         null: false
+      t.string      :title_long
       t.string      :company
       t.string      :city,          null: false
       t.string      :state,         null: false

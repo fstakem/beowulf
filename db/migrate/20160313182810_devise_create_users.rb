@@ -37,6 +37,8 @@ class DeviseCreateUsers < ActiveRecord::Migration
       t.string  :phone_number
       t.string  :title
       t.text    :about_me
+      t.text    :resume_objective
+      t.string  :professional_title
 
       t.timestamps null: false
     end

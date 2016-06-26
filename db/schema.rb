@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 20160412003907) do
 
   create_table "jobs", force: :cascade do |t|
     t.string   "title",                       null: false
+    t.string   "title_long"
     t.string   "company"
     t.string   "city",                        null: false
     t.string   "state",                       null: false
@@ -120,8 +121,10 @@ ActiveRecord::Schema.define(version: 20160412003907) do
     t.date     "start_date",                      null: false
     t.date     "end_date"
     t.string   "degree",                          null: false
+    t.string   "degree_long"
     t.string   "major",                           null: false
     t.string   "gpa"
+    t.string   "city"
     t.date     "graduation_date",                 null: false
     t.boolean  "attending",       default: false, null: false
     t.text     "activities"
@@ -179,6 +182,8 @@ ActiveRecord::Schema.define(version: 20160412003907) do
     t.string   "phone_number"
     t.string   "title"
     t.text     "about_me"
+    t.text     "resume_objective"
+    t.string   "professional_title"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
   end
