@@ -12,8 +12,16 @@
     <%= render 'title_link',    post: post, layout_index: 1 %>
     <%= render 'detail_1',      post: post %>
   <% else %>
-    <%= render 'title_link',    post: post, layout_index: 2 %>
-    <%= render 'detail_2',      post: post %>
+
+    <% if post.grouped_photos.count > 0 %>
+      <%= render 'title_link', post: post, layout_index: 2 %>
+    <% else %>
+      <%= render 'shifted_title_link', post: post, layout_index: 2 %>
+    <% end %>
+    
+    <%= render 'detail_2', post: post %>
   <% end %>
 <% end %>
+
+
 
