@@ -6,21 +6,21 @@ default: &default
 
 development:
   <<: *default
-  database: beowulf_dev
+  database: <%= ENV['DEV_DB'] %>
   username: <%= ENV['DEV_DB_USER'] %>
   password: <%= ENV['DEV_DB_PASSWORD'] %>
   host: localhost
 
 test:
   <<: *default
-  database: beowulf_test
+  database: <%= ENV['TEST_DB'] %>
   username: <%= ENV['TEST_DB_USER'] %>
   password: <%= ENV['TEST_DB_PASSWORD'] %>
   host: localhost
 
 production:
   <<: *default
-  database: beowulf_prod
+  database: <%= ENV['PROD_DB'] %>
   username: <%= ENV['PROD_DB_USER'] %>
   password: <%= ENV['PROD_DB_PASSWORD'] %>
   host: localhost

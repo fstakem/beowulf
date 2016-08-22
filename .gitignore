@@ -18,3 +18,5 @@
 
 /shared
 /public/assets
+
+env_vars.sh
