@@ -216,10 +216,9 @@ job.title_long    = 'Data Products Software Engineer'
 job.company       = 'Medlytix'
 job.city          = 'Atlanta'  
 job.state         = 'GA' 
-job.start_date    = Date.strptime('9/1/2014', '%m/%d/%Y')
-job.end_date      = Date.strptime('9/30/2015', '%m/%d/%Y')
-job.end_date      = nil
-job.current_job   = true
+job.start_date    = Date.strptime('9/1/2015', '%m/%d/%Y')
+job.end_date      = Date.strptime('9/30/2016', '%m/%d/%Y')
+job.current_job   = false
 job.user_id       = user.id
 job.save! 
 jobs.push(job)
@@ -230,8 +229,8 @@ job.title_long    = 'Software Engineer'
 job.company       = 'Itaas a Cognizant Company'
 job.city          = 'Atlanta'  
 job.state         = 'GA' 
-job.start_date    = Date.strptime('8/30/2015', '%m/%d/%Y')
-job.end_date      = Date.strptime('8/1/2014', '%m/%d/%Y')
+job.start_date    = Date.strptime('8/1/2014', '%m/%d/%Y')
+job.end_date      = Date.strptime('8/30/2015', '%m/%d/%Y')
 job.current_job   = false
 job.user_id       = user.id
 job.save! 
@@ -256,8 +255,8 @@ job.title_long    = 'Software Engineer'
 job.company       = 'Independent Contractor'
 job.city          = 'Atlanta'  
 job.state         = 'GA' 
-job.start_date    = Date.strptime('7/1/2014', '%m/%d/%Y')
-job.end_date      = Date.strptime('2/1/2015', '%m/%d/%Y')
+job.start_date    = Date.strptime('7/1/2013', '%m/%d/%Y')
+job.end_date      = Date.strptime('2/1/2014', '%m/%d/%Y')
 job.current_job   = false
 job.user_id       = user.id
 job.save! 
