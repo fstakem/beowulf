@@ -16,7 +16,9 @@ user.first_name             = 'Fredrick'
 user.last_name              = 'Stakem'
 user.phone_number           = '4045555555'
 user.title                  = 'Software Engineer'
-user.about_me               = 'TODO'
+user.about_me               = <<~HEREDOC
+                                TEST
+                                HEREDOC
 user.save!
 
 # Projects
